@@ -14,8 +14,9 @@ var resultCompiledSearch = null;
 /* set up the event handlers */
 if( findCurrentPage() == MRESULT || findCurrentPage() == RRESULT ) {
 	G.evt.result.hitCountReceived.push(resultSetHitInfo);
-	G.evt.result.recordReceived.push(resultDisplayRecord, resultAddCopyCounts);
-	G.evt.result.copyCountsReceived.push(resultDisplayCopyCounts);
+	G.evt.result.recordReceived.push(resultDisplayRecord);
+	//G.evt.result.recordReceived.push(resultDisplayRecord, resultAddCopyCounts);
+	//G.evt.result.copyCountsReceived.push(resultDisplayCopyCounts);
 	G.evt.result.allRecordsReceived.push( function(){unHideMe($('result_info_2'))}, fetchGoogleBooksLink, fetchChiliFreshReviews);
 
 	attachEvt('result','lowHits',resultLowHits);
