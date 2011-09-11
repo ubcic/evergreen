@@ -47,9 +47,57 @@
                                 <!-- Empty span used for creating OpenLibrary links -->
                                 <td rowspan='4' name="openLibraryLink" style="text-align: center; vertical-align: middle; width: 15em;" class="hide_me"></td>
                                 <!-- Copy this td for each copy count appended -->
-                                <td  rowspan='4' nowrap='nowrap' name="copy_count_cell" class='copy_count_cell'> 
-                                </td>
+                                <td rowspan='3' nowrap='nowrap' style='padding: 10px; text-align: left; width: 45%' name='copy_count_cell' class='copy_count_cell'> 
+                                    <span type='opac/slot-data+holdings_xml-full' query='volumes'> 
+                                        <span class='hide_me' type='opac/slot-format'><![CDATA[
+                                    var output = dojo.create('span'); 
 
+                                    var item_cnt = 0;
+                                    var max_items = 4;
+
+
+                                    dojo.query('volume', item).forEach(function(vol) {
+                                        if (item_cnt >= max_items) {
+                                            return output.innerHTML;
+                                        }
+                                        dojo.query('copy', vol).forEach(function (cp) {
+                                            if (cp.getAttribute('deleted') == 't') {
+                                                return;
+                                            }
+                                            var cp_entry = dojo.create('div');
+                                            var loc_id;
+                                            var vol_appended = false;
+                                            dojo.query('location', cp).forEach(function (location) {
+                                                loc_id = parseInt(location.getAttribute('ident'));
+                                                    if (!vol_appended) {
+                                                        var cn = dojo.create('span', { style: "font-weight: bold;" }, cp_entry);
+                                                        var cn_txt = dojo.doc.createTextNode(vol.getAttribute('label'));
+                                                        cn.appendChild(cn_txt);
+                                                        vol_appended = true;
+                                                    }
+                                                    var loc = dojo.create('span', { "style": "font-weight: bold;"}, cp_entry);
+                                                    var loc_txt = dojo.doc.createTextNode(' - ' + BT.textContent(location));
+                                                    loc.appendChild(loc_txt);
+                                            });
+                                            dojo.query('status', cp).forEach(function (status) {
+                                                var cp_status = dojo.create('span', { "style": "font-weight: bold;" }, cp_entry);
+                                                var cp_status_txt = dojo.doc.createTextNode(' [' + BT.textContent(status) + ']');
+                                                cp_status.appendChild(cp_status_txt);
+                                            });
+
+                                            item_cnt++;
+                                            if (item_cnt >= max_items) {
+                                                dojo.create('br', null, cp_entry);
+                                                cp_entry.appendChild(dojo.doc.createTextNode('... more print items listed in full record'));
+                                            }
+                                            output.appendChild(cp_entry);
+                                        });
+                                    });
+
+                                return output.innerHTML;
+                                        ]]></span>
+                                    </span>
+                                </td>
                             </tr>
         
                             <tr style='height: 1em' >
