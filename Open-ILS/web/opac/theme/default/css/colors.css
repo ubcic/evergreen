@@ -10,36 +10,36 @@ body a:hover	{ color: red; text-decoration: underline;}
  * in this file
  */
  
-.color_1 { background: #A7EA9D; color: #000000; }
-.color_2 { background: #64EA4F; color: #000000; }
-.color_3 { background: #E0F6E0; color: #000000; }
-.color_4 { background: #E0F0E0; color: #000000; }
+.color_1 { background: #FFFFFF; color: #000000; }
+.color_2 { background: #FFFFFF; color: #000000; }
+.color_3 { background: #6F072D; color: #FFFFFF; }
+.color_4 { background: #FFFFFF; color: #000000; }
 
-.border_1 { border: 1px solid #A7EA9D; }
-.border_2 { border: 1px solid #64EA4F; }
-.border_3 { border: 1px solid #E0F6E0; }
-.border_4 { border: 1px solid #E0F0E0; }
+.border_1 { border: 1px solid #000000; }
+.border_2 { border: 1px solid #000000; }
+.border_3 { border: 1px solid #000000; }
+.border_4 { border: 1px solid #000000; }
 
-.border_1_2 { border: 2px solid #A7EA9D; }
-.border_2_2 { border: 2px solid #64EA4F; }
-.border_3_2 { border: 2px solid #E0F6E0; }
-.border_4_2 { border: 2px solid #E0F0E0; }
+.border_1_2 { border: 2px solid #000000; }
+.border_2_2 { border: 2px solid #000000; }
+.border_3_2 { border: 2px solid #000000; }
+.border_4_2 { border: 2px solid #000000; }
 
-.border_1_3 { border: 3px solid #A7EA9D; }
-.border_2_3 { border: 3px solid #64EA4F; }
-.border_3_3 { border: 3px solid #E0F6E0; }
-.border_4_3 { border: 3px solid #E0F0E0; }
+.border_1_3 { border: 3px solid #000000; }
+.border_2_3 { border: 3px solid #000000; }
+.border_3_3 { border: 3px solid #000000; }
+.border_4_3 { border: 3px solid #000000; }
 
 /* some facet styling */
-.facetClassContainer { margin: 2px; border: 1px solid #64EA4F; }
-.facetClassLabelContainer { background: #A7EA9D; border: 1px solid #A7EA9D; }
-.facetClassLabel { font-weight: bold; text-align: center; }
-.facetFieldContainer { background: #E0F6E0; }
+.facetClassContainer { margin: 2px; border: 1px solid #6F072D; }
+.facetClassLabelContainer { background: #6F072D; border: 1px solid #6F072D; }
+.facetClassLabel { font-weight: bold; text-align: center; color: #FFFFFF; }
+.facetFieldContainer { background: #FFFFFF; }
 .facetFieldLabel { padding-left: 2px; margin-top: 5px; margin-bottom: 5px; font-weight: bold; text-align: left; }
 .extraFacetFieldsWrapper { }
 .toggleExtraFacetFieldsButton { float: right; margin: 0px; padding: 0px; }
-.facetFieldLineCount { display: inline-block; border-right: 1px solid #A7EA9D; color: gray; width: 3em; margin-right: 3px }
-.facetField { border-top: 1px solid #A7EA9D; }
+.facetFieldLineCount { display: inline-block; border-right: 1px solid #6F072D; color: gray; width: 3em; margin-right: 3px }
+.facetField { border-top: 1px solid #6F072D; }
 .facetFields { padding-left: 5px; }
 .facetFieldLineValue { overflow: hidden; text-overflow: ellipsis; }
 
@@ -68,43 +68,45 @@ body a:hover	{ color: red; text-decoration: underline;}
 .searcherDeckSwapContainer {}
 
 /* general purpose light borders */
-.border_5 { border: 1px solid #D0D0D0; }
-.border_6 { border: 1px solid #808080; }
+.border_5 { border: 1px solid #FFFFFF; }
+.border_6 { border: 1px solid #000000; }
 
-input:focus { background: #E0F0E0; color: #000000;}
-a:focus { background: #E0F0E0; color: #000000;}
+input:focus { background: #FFFFFF; color: #000000;}
+a:focus { background: #FFFFFF; color: #000000;}
 
 
 /* ---------------------------------------------------------------------- */
 
 .canvas { /* main content div for each page */
-    border-left: 3px solid #A7EA9D;
-    border-bottom: 3px solid #A7EA9D;
-	border-top: 3px solid #A7EA9D;
+    border-left: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+	border-top: 3px solid #000000;
 }
 
 /* border around home search box */
-.home_search { border: 3px solid #A7EA9D; }
+.home_search { border: 3px solid #6F072D; }
 
 /* main nav sidebar */
-.sidebar_item_active { background: #A7EA9D; }
+.sidebar_item_active { color: #FFFFFF; background: #6F072D; }
+.sidebar_item_active a { color: white; }
+
 
 /* record detail summary block */
-.rdetail_desc { border: 1px solid #A7EA9D; }
-.rdetail_item { border: 1px solid #A7EA9D; }
-.rdetail_extras_selected { background: #E0F0E0;} 
+.rdetail_desc { border: 1px solid #6F072D; }
+.rdetail_item { border: 1px solid #6F072D; }
+.rdetail_extras_selected { background: #FFFFFF;} 
 
 
-.data_grid thead tr { background: #E0F0E0; color: #000000; }
-.data_grid thead td { border: 1px solid #808080; }
-.data_grid tbody td { border: 1px solid #E0F6E0; }
-.data_grid_nb thead tr { background: #E0F0E0; color: #000000; }
+.data_grid thead tr { background: #FFFFFF; color: #000000; }
+.data_grid thead td { border: 1px solid #000000; }
+.data_grid tbody td { border: 1px solid #6F072D; }
+.data_grid_nb thead tr { background: #FFFFFF; color: #000000; }
 .data_grid_nb thead td { border: none; }
 .data_grid_nb tbody td { border: none; }
 
-.light_border { border: 1px solid #E0F6E0; }
+.light_border { border: 1px solid #6F072D; }
 
-.adv_quick_search_submit { border-bottom: 3px solid #E0F6E0;}
+.adv_quick_search_submit { border-bottom: 3px solid #6F072D;}
 
 .myopac_link_active { background: #E0F6E0; }
 
@@ -117,12 +119,12 @@ a:focus { background: #E0F0E0; color: #000000;}
 .nav_link_active {font-weight: bold;}
 
 .search_link { text-decoration: none; }
-.result_table_subtable { border-top: 1px solid #E0E0E0; }
+.result_table_subtable { border-top: 1px solid #FFFFFF; }
 
-.copy_count_cell { border-right: 1px solid #E0E0E0; } 
-.copy_count_div {	border-left: 2px solid #E0F6E0; border-right: 2px solid #E0F6E0; }
+.copy_count_cell { border-right: 1px solid #FFFFFF; } 
+.copy_count_div {	border-left: 2px solid #6F072D; border-right: 2px solid #6F072D; }
 
-#rdetail_image_cell { border: 1px solid white; border-right: 1px solid #A7EA9D;}
+#rdetail_image_cell { border: 1px solid white; border-right: 1px solid #6F072D;}
 #rdetail_img_link { display: block; margin-left: 1em; margin-bottom: 1em; }
 
 .x_mark { color: red; }
@@ -134,6 +136,6 @@ a:focus { background: #E0F0E0; color: #000000;}
 
 .hold_expire_warning { color:red; }
 
-#result_low_hits { border-top: 2px solid #A7EA9D }
+#result_low_hits { border-top: 2px solid 6F072D }
 
 .parts-warning { border: 2px solid red; }
