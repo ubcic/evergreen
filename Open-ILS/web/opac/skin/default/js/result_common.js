@@ -566,7 +566,7 @@ function resultDisplayRecord(rec, pos, is_mr) {
 			pic.parentNode.setAttribute("href", buildOPACLink(args));
 		}
 
-		unHideMe($n(r,'place_hold_span'));
+		//unHideMe($n(r,'place_hold_span'));
 		$n(r,'place_hold_link').onclick = function() { resultDrawHoldsWindow(rec.doc_id(), 'M'); }
             
 
@@ -581,7 +581,7 @@ function resultDisplayRecord(rec, pos, is_mr) {
 		args[PARAM_RID] = rec.doc_id();
 		pic.parentNode.setAttribute("href", buildOPACLink(args));
 
-		unHideMe($n(r,'place_hold_span'));
+		//unHideMe($n(r,'place_hold_span'));
 		$n(r,'place_hold_link').onclick = function() { resultDrawHoldsWindow(rec.doc_id(), 'T'); }
 	}
 
