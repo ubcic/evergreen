@@ -86,12 +86,12 @@
 				<table><tbody><tr>
 					<td>
 						<select id='adv_quick_type' style='width: 6em;'>
+							<option value='barcode'>&opac.advanced.quick.barcode;</option>
 							<option value='isbn'>&opac.advanced.quick.isbn;</option>
 							<option value='issn'>&opac.advanced.quick.issn;</option>
 							<option value='cn'>&opac.advanced.quick.cn;</option>
 							<option value='lccn'>&opac.advanced.quick.lccn;</option>
 							<option value='tcn'>&opac.advanced.quick.tcn;</option>
-							<option value='barcode'>&opac.advanced.quick.barcode;</option>
 						</select>
 					</td><td>
 						<input type='text' id='adv_quick_text' size='16' />
