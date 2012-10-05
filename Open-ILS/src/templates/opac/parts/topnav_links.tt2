@@ -1,11 +1,11 @@
 <div id="gold-links-holder">
     <div id="gold-links">
         <div id="header-links">
-            <a href="http://example.com">[% l('Link 1') %]</a>
-            <a href="http://example.com">[% l('Link 2') %]</a>
-            <a href="http://example.com">[% l('Link 3') %]</a>
-            <a href="http://example.com">[% l('Link 4') %]</a>
-            <a href="http://example.com">[% l('Link 5') %]</a>
+            <a href="http://ubcic.bc.ca/library">[% l('UBCIC Resource Centre') %]</a>
+            <a href="http://ubcic.bc.ca/Resources/Digital/index.htm">[% l('Digital Collections') %]</a>
+            <a href="http://gsdl.ubcic.bc.ca/rg10/rg10.html">[% l('RG-10 Search') %]</a>
+            <a href="http://ubcic.bc.ca">[% l('UBCIC Home') %]</a>
+            <a href="http://www.collectionscanada.gc.ca/archivianet/02010502_e.html">[% l('National Archives') %]</a>
         </div>
     </div>
 </div>

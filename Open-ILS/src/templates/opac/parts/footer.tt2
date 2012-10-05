@@ -1,10 +1,8 @@
 <div id="footer-wrap">
 <div id="footer">
-    <a href="/">[% l('Dynamic catalog') %]</a> &nbsp;|&nbsp;
-    <a href="http://example.com">[% l('Bottom Link 2') %]</a> &nbsp;|&nbsp;
-    <a href="http://example.com">[% l('Bottom Link 3') %]</a> &nbsp;|&nbsp;
-    <a href="http://example.com">[% l('Bottom Link 4') %]</a> &nbsp;|&nbsp;
-    <a href="http://example.com">[% l('Bottom Link 5') %]</a>
+    <a href="/opac/en-CA/skin/default/xml/index.xml">[% l('Classic catalog') %]</a> &nbsp;|&nbsp;
+    <a href="http://www.ubcic.bc.ca">[% l('UBCIC Homepage') %]</a> &nbsp;|&nbsp;
+    <a href="http://www.ubcic.bc.ca/library">[% l('UBCIC Resource Centre') %]</a>
     [% IF ctx.timing %]
     <div id="timing">
         [% FOR event IN ctx.timing %]
@@ -13,9 +11,6 @@
         [% END %]
     </div>
     [% END %]
-    <div id="copyright_text" style="margin-top: 2em;">
-        [% l('Copyright &copy; 2006-[_1] Georgia Public Library Service, and others', date.format(date.now, '%Y')) %]
-    </div>
     <div id="footer_logo">
         [% l('Powered by') %]
         <a href="http://evergreen-ils.org">
