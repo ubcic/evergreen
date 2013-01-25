@@ -1,11 +1,13 @@
 <div id="gold-links-holder">
     <div id="gold-links">
         <div id="header-links">
-            <a href="http://ubcic.bc.ca/library">[% l('UBCIC Resource Centre') %]</a>
+            <a href="http://www.ubcic.bc.ca">[% l('UBCIC Home') %]</a>
+            <a href="http://ubcic.bc.ca/department/library.htm">[% l('UBCIC Resource Centre') %]</a>
             <a href="http://ubcic.bc.ca/Resources/Digital/index.htm">[% l('Digital Collections') %]</a>
-            <a href="http://gsdl.ubcic.bc.ca/rg10/rg10.html">[% l('RG-10 Search') %]</a>
-            <a href="http://ubcic.bc.ca">[% l('UBCIC Home') %]</a>
-            <a href="http://www.collectionscanada.gc.ca/archivianet/02010502_e.html">[% l('National Archives') %]</a>
+            <a href="http://www.collectionscanada.gc.ca/lac-bac/search/arch">[% l('LAC Archives Search') %]</a>
+            <a href="http://search.bcarchives.gov.bc.ca/sn-28E20C3/search">[% l('BC Archives Search') %]</a>
+            <a href="http://memorybc.ca">[% l('Memory BC') %]</a>
+            <a href="http://westbeyondthewest.ca">[% l('West Beyond the West') %]</a>
         </div>
     </div>
 </div>
